@@ -1,0 +1,12 @@
+.about {
+  height: 90vh;
+  background-color: #1abc9c;
+}
+
+
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-decoration-color: rgb(255, 253, 253);
+}

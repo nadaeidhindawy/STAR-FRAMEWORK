@@ -1,0 +1,34 @@
+<section class="portfolio">
+  <div class="text-center pt-5 ">
+    <h2 class="fs-1 fw-bold  mb-2">PORTFOLIO COMPONENT</h2>
+    <div class="line1 d-grid m-auto">
+    </div>
+
+  </div>
+  <div class="container ">
+    <div class="row g-5 mt-2 ">
+      @for (item of imgUrl; track item) {
+      <div class=" col-md-4 " (click)="bindImage(item)">
+        <div class="image  position-relative  " data-bs-toggle="modal" data-bs-target="#imageModel">
+
+          <img [src]="'assets/img/'+ item" class="card-img" alt="">
+          <div class="item2 position-absolute">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+
+      </div>
+      } @empty {
+      <li>There are no items.</li>
+      }
+    </div>
+  </div>
+</section>
+<div class="modal fade" id="imageModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered " role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img [src]="'./assets/img/'+ imageInModel" class="card-img" alt="">
+      </div>
+    </div>
+  </div>

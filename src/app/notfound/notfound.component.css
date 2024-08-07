@@ -1,0 +1,9 @@
+.not-found {
+  height: 100vh;
+  padding-top: 20px;
+}
+
+span {
+  color: rgb(41, 43, 45);
+  font-size: 60px;
+}
